@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import '../css/HomePage.css';
-
+import { withRouter } from 'react-router-dom';
 import {
-    MDBView,
-    MDBMask,
     MDBNavbar,
     MDBNavbarNav,
     MDBNavbarToggler,
@@ -14,32 +11,31 @@ import {
     MDBCollapse
 } from 'mdbreact';
 
-class HomePage extends Component {
+class NavBar extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
             collapse: false,
+            isWideEnough: false,
         };
         this.onClick = this.onClick.bind(this);
     }
-    
+
     onClick =() => this.setState({ collapse: !this.state.collapse });
 
     render() {
-        return (
-            <div id="HomePage">
-            <header>
-            <MDBView className="pink-gradient">
-                <MDBNavbar dark expand="md" className="z-1">
-                    <MDBContainer>
-                    <MDBNavbarBrand href="/">
-                        <strong>Sandre Home Design Inc.</strong>
-                    </MDBNavbarBrand>
-                    <MDBNavbarToggler onClick={this.onClick} />
-                    <MDBCollapse isOpen={this.state.collapse} navbar>
-                        <MDBNavbarNav left>
-                        <MDBNavItem active>
+        return(
+            <div id="NavBar">
+            <MDBNavbar color="grey lighten-1" fixed="top" dark expand="md">
+                <MDBContainer>
+                <MDBNavbarBrand href="/">
+                    <strong>Sandre Home Design Inc.</strong>
+                </MDBNavbarBrand>
+                <MDBNavbarToggler onClick={this.onClick} />
+                <MDBCollapse isOpen={this.state.collapse} navbar>
+                    <MDBNavbarNav left>
+                        <MDBNavItem>
                             <MDBNavLink to="/">Home</MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
@@ -55,20 +51,12 @@ class HomePage extends Component {
                             <MDBNavLink to="/contact">Contact</MDBNavLink>
                         </MDBNavItem>
                         </MDBNavbarNav>
-                    </MDBCollapse>
-                    </MDBContainer>
-                </MDBNavbar>
-
-                <MDBMask overlay="black-slight" className="flex-center flex-column text-white text-center">
-                </MDBMask>
-            </MDBView>
-            </header>
-            <main>
-
-            </main>
+                </MDBCollapse>
+                </MDBContainer>
+            </MDBNavbar>
             </div>
         );
     }
 };
 
-export default HomePage;
+export default withRouter(NavBar);
