@@ -27,7 +27,7 @@ class NavBar extends Component {
     render() {
         return(
             <div id="NavBar">
-            <MDBNavbar color="grey lighten-1" fixed="top" dark expand="md">
+            <MDBNavbar color="pink darken-1" fixed="top" dark expand="md">
                 <MDBContainer>
                 <MDBNavbarBrand href="/">
                     <strong>Sandre Home Design Inc.</strong>
@@ -36,19 +36,22 @@ class NavBar extends Component {
                 <MDBCollapse isOpen={this.state.collapse} navbar>
                     <MDBNavbarNav left>
                         <MDBNavItem>
-                            <MDBNavLink to="/">Home</MDBNavLink>
+                            <MDBNavLink to='/'>Home</MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
-                            <MDBNavLink to="/about">About</MDBNavLink>
+                            <MDBNavLink to='/about'>About</MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
-                            <MDBNavLink to="/gallery">Gallery</MDBNavLink>
+                            <MDBNavLink to='/gallery'>Gallery</MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
-                            <MDBNavLink to="/instagram">Instagram</MDBNavLink>
+                            <MDBNavLink to='/instagram'>Instagram</MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
-                            <MDBNavLink to="/contact">Contact</MDBNavLink>
+                            <MDBNavLink to='/services'>Services</MDBNavLink>
+                        </MDBNavItem>
+                        <MDBNavItem>
+                            <MDBNavLink to='/contact'>Contact</MDBNavLink>
                         </MDBNavItem>
                         </MDBNavbarNav>
                 </MDBCollapse>

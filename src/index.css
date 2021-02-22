@@ -12,4 +12,12 @@ code {
     monospace;
 }
 
+p { margin-bottom: 5px; }
+
+.fixed-top { z-index: 900 !important; }
 .z-1 { z-index: 1; }
+.sandre-text { color: rgb(238, 39, 102); }
+.sandre-color { background: rgb(238, 39, 102) !important; }
+.app-page { 
+  margin-top: 6.7rem;
+}

@@ -1,4 +1,271 @@
 #HomePage .pink-gradient {
-    background-image: linear-gradient(30deg, rgb(238, 39, 102), rgb(238, 39, 102, .4), rgba(255, 255, 255, 0)); 
+    background-image: linear-gradient(to bottom left, rgb(238, 39, 102), rgb(238, 39, 102, .5), rgb(255, 255, 255)); 
     height: 600px;
 }
+
+#HomePage .black-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+    height: 1080px;
+    width: 1920px;
+}
+  
+#HomePage .embed-responsive .embed-responsive-item, 
+.embed-responsive embed, .embed-responsive iframe, 
+.embed-responsive object, .embed-responsive video {
+    position: relative !important;
+}
+  
+#HomePage .embed-responsive-16by9::before {
+    padding-top: 0;
+}
+
+#HomePage .video-wrapper {
+    overflow: hidden;
+    display: block !important;
+    height: 1080px;
+}
+
+#HomePage .video {
+    object-fit: cover;
+    height: 1400px;
+}
+
+#HomePage .LogoContainer {
+    position: relative;
+    top: -120px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1280px) {
+    #HomePage .video-wrapper {
+        overflow: hidden;
+        display: block !important;
+        height: 800px;
+    }
+
+    #HomePage .video {
+        object-fit: cover;
+        height: 1000px;
+    }
+    
+    #HomePage .LogoContainer {
+        position: relative;
+        top: -120px;
+        left: -320px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #HomePage .video-wrapper {
+        overflow: hidden;
+        display: block !important;
+        height: 800px;
+    }
+
+    #HomePage .video {
+        object-fit: cover;
+        height: 1000px;
+    }
+    
+    #HomePage .LogoContainer {
+        position: relative;
+        top: -120px;
+        left: -440px;
+    }
+}
+
+@media only screen and (max-width: 812px) {
+    #HomePage .video-wrapper {
+        overflow: hidden;
+        display: block !important;
+        height: 800px;
+    }
+
+    #HomePage .video {
+        object-fit: cover;
+        height: 1000px;
+    }
+    
+    #HomePage .LogoContainer {
+        position: relative;
+        top: -320px;
+        left: -500px;
+    }
+
+    #HomePage .Logo {
+        height: 160px;
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #HomePage .video-wrapper {
+        overflow: hidden;
+        display: block !important;
+        height: 800px;
+    }
+
+    #HomePage .video {
+        object-fit: cover;
+        height: 1000px;
+    }
+    
+    #HomePage .LogoContainer {
+        position: relative;
+        top: -120px;
+        left: -500px;
+    }
+
+    #HomePage .Logo {
+        height: 160px;
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #HomePage .video-wrapper {
+        overflow: hidden;
+        display: block !important;
+        height: 800px;
+    }
+
+    #HomePage .video {
+        object-fit: cover;
+        height: 1000px;
+    }
+    
+    #HomePage .LogoContainer {
+        position: relative;
+        top: -180px;
+        left: -520px;
+    }
+
+    #HomePage .Logo {
+        height: 220px;
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    #HomePage .video-wrapper {
+        overflow: hidden;
+        display: block !important;
+        height: 800px;
+    }
+
+    #HomePage .video {
+        object-fit: cover;
+        height: 1000px;
+    }
+    
+    #HomePage .LogoContainer {
+        position: relative;
+        top: -330px;
+        left: -540px;
+    }
+
+    #HomePage .Logo {
+        height: 150px;
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    #HomePage .video-wrapper {
+        overflow: hidden;
+        display: block !important;
+        height: 800px;
+    }
+
+    #HomePage .video {
+        object-fit: cover;
+        height: 1000px;
+    }
+    
+    #HomePage .LogoContainer {
+        position: relative;
+        top: -330px;
+        left: -570px;
+    }
+
+    #HomePage .Logo {
+        height: 150px;
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #HomePage .video-wrapper {
+        overflow: hidden;
+        display: block !important;
+        height: 800px;
+    }
+
+    #HomePage .video {
+        object-fit: cover;
+        height: 1000px;
+    }
+    
+    #HomePage .LogoContainer {
+        position: relative;
+        top: -190px;
+        left: -700px;
+    }
+
+    #HomePage .Logo {
+        height: 150px;
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #HomePage .video-wrapper {
+        overflow: hidden;
+        display: block !important;
+        height: 800px;
+    }
+
+    #HomePage .video {
+        object-fit: cover;
+        height: 1000px;
+    }
+    
+    #HomePage .LogoContainer {
+        position: relative;
+        top: -180px;
+        left: -720px;
+    }
+
+    #HomePage .Logo {
+        height: 150px;
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #HomePage .video-wrapper {
+        overflow: hidden;
+        display: block !important;
+        height: 800px;
+    }
+
+    #HomePage .video {
+        object-fit: cover;
+        height: 1000px;
+    }
+    
+    #HomePage .LogoContainer {
+        position: relative;
+        top: -180px;
+        left: -730px;
+    }
+
+    #HomePage .Logo {
+        height: 150px;
+        margin-right: 100px;
+    }
+}
+

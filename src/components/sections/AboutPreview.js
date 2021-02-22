@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import '../css/About.css';
 
+import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import {
     MDBCard,
@@ -10,11 +10,11 @@ import {
     MDBBtn
 } from 'mdbreact';
 
-import Headshot from '../../res/images/Headshot2.jpg';
+import Headshot from '../../res/images/Headshot1.jpg';
 
 import SocialMedia from '../../res/SocialMedia';
 
-class About extends Component {
+class AboutPreview extends Component {
 
     constructor(props) {
         super(props);
@@ -24,8 +24,8 @@ class About extends Component {
     render() {
         const { className, fluid } = this.props;
         return(
-            <div id="About">
-                <Container fluid={fluid} className={className}>
+            <div className="AboutPreview">
+                <Container fluid={fluid} className={`${className}`}>
                 <Row>
                     <Col>
                     <MDBCard>
@@ -46,27 +46,26 @@ class About extends Component {
                         </MDBBtn>
                         <br />
                         <br />
+                        <p>Sophia Martorella Aksoy is the owner and founder of Sandre Home Design Inc. </p>
                         <p>
-                        Sophia is a graduate of the Fashion Institute of Technology in NYC. She graduated with a degree in Patternmaking 
-                        Technology and worked for over 20 years in NY’s garment center.
+                        Sophia offers her services as a full-service window treatment specialist. From measure to install, 
+                        Sophia provides a personal touch to her client’s custom treatments.  Sophia offers soft treatments, 
+                        hard treatments, upholstery services, fabrics, trims and much more. 
                         </p>
                         <p>
-                        This vast experience has contributed to Sophia’s ability to understand fabrics and their properties, so you are 
-                        assured of the best result for your custom window soft treatments.
+                        With over 20 years in business and repeat customers, Sophia will be happy to help you with your 
+                        project. She will work with each client’s budget. Many other decorating services are available. They 
+                        include paint selection, furniture and accessory shopping and in-home placement.
                         </p>
-                        <p>
-                        Sophia has been sewing since she is 9 years old and her creativity flows into many areas. She understands measuring, 
-                        fabrication, and installation. She offers selected design services as well. 
-                        </p>
-                        <p>
-                        Sophia is the proud parent of her son Andre, a recent college graduate.
-                        She enjoys many creative pastimes which include painting with watercolors and creating apparel.
-                        </p>
+                        <p>Please call for your complimentary “in – home “consultation today!</p>
+                        <Link to="/about">
+                        <MDBBtn color="elegant" className="sandre-color ml-0" size="md">Read More</MDBBtn>
+                        </Link>
                         </MDBCardText>
                         </Col>
-                        <Col lg={2} />
+                        <Col lg={2} className="mt-4" />
                         <Col lg={4} md={6} sm={12} xs={12}>
-                        <img className="img-fluid" src={Headshot} alt="" />
+                            <img className="img-fluid" src={Headshot} alt="" />
                         </Col>
                     </Row>
                     </MDBCardBody>
@@ -79,4 +78,4 @@ class About extends Component {
     }
 };
 
-export default About;
+export default AboutPreview;
