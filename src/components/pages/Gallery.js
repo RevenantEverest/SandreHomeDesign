@@ -21,7 +21,7 @@ class Gallery extends Component {
                 "pillows",
                 "roman shades",
                 "upholstery",
-                "valences"
+                "valances"
             ],
             filter: []
         };
