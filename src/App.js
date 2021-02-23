@@ -7,7 +7,6 @@ import About from './components/pages/About';
 import Gallery from './components/pages/Gallery';
 import Contact from './components/pages/Contact';
 import Instagram from './components/pages/Instagram';
-import Services from './components/pages/Services';
 import Footer from './components/navigation/Footer';
 
 class App extends Component {
@@ -31,7 +30,6 @@ class App extends Component {
                     <Route exact path="/gallery" component={() => (<Gallery className="app-page" />)} />
                     <Route exact path="/contact" component={() => (<Contact className="app-page" />)} />
                     <Route exact path="/instagram" component={() => (<Instagram className="app-page" />)} />
-                    <Route exact path="/services" component={() => (<Services className="app-page" />)} />
                     <Footer />
                 </div>
             </Router>

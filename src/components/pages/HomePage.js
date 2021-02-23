@@ -3,8 +3,6 @@ import '../css/HomePage.css';
 
 import { Container, Row, Col } from 'react-bootstrap';
 import {
-    MDBView,
-    MDBMask,
     MDBNavbar,
     MDBNavbarNav,
     MDBNavbarToggler,
@@ -12,8 +10,6 @@ import {
     MDBNavItem,
     MDBNavLink,
     MDBCollapse,
-    MDBCard,
-    MDBCardBody,
     MDBBtn
 } from 'mdbreact';
 
@@ -21,8 +17,6 @@ import AboutPreview from '../sections/AboutPreview';
 import Contact from './Contact';
 
 import Logo from '../../res/images/Logo.png';
-import UpholsteryImage from '../../res/images/Upholstery/20170428_123052.jpg';
-import BG from '../../res/images/BG.jpg';
 import Video from '../../res/videos/WebsiteVideo.mp4';
 
 class HomePage extends Component {
@@ -80,9 +74,6 @@ class HomePage extends Component {
                         <MDBNavLink to='/instagram'>Instagram</MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
-                        <MDBNavLink to='/services'>Services</MDBNavLink>
-                        </MDBNavItem>
-                        <MDBNavItem>
                         <MDBNavLink to='/contact'>Contact</MDBNavLink>
                         </MDBNavItem>
                     </MDBNavbarNav>
@@ -91,27 +82,7 @@ class HomePage extends Component {
                 </MDBNavbar>
                 {collapsed && overlay}
             </div>
-            {/* Solid Image Background */}
-
-            {/* <MDBView src={BG} fixed>
-            <MDBMask overlay="black-strong" />
-            <Container
-                className='d-flex justify-content-center align-items-center'
-                style={{ height: '100%', width: '100%'}}
-            >
-                <Row className="d-flex justify-content-center">
-                <Col lg={6} md={12}>
-                    <img className="img-fluid" src={Logo} alt="" />
-                    <MDBBtn className='sandre-color' size='md'>Portfolio</MDBBtn>
-                    <MDBBtn className='sandre-color' size='md'>Services</MDBBtn>
-                    <MDBBtn className='sandre-color' size='md'>About</MDBBtn>
-                </Col>
-                </Row>
-            </Container>
-            </MDBView> */}
-
             {/* Video Background */}
-
             <div className="embed-responsive embed-responsive-16by9 video-wrapper">
                 <div className="black-overlay" >
                 <Container
@@ -133,56 +104,6 @@ class HomePage extends Component {
             </div>
             <main>
             <Container className="mt-5">
-            <Row>
-                <Col lg={4}>
-                <MDBCard>
-                <MDBCardBody>
-                <Row>
-                    <Col>
-                    <img className="img-fluid" src={UpholsteryImage} alt="" />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col className="text-center">
-                    <MDBBtn color="elegant" className="sandre-color w-100 ml-0">Upholstery</MDBBtn>
-                    </Col>
-                </Row>
-                </MDBCardBody>
-                </MDBCard>
-                </Col>
-                <Col lg={4}>
-                <MDBCard>
-                <MDBCardBody>
-                <Row>
-                    <Col>
-                    <img className="img-fluid" src={UpholsteryImage} alt="" />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col className="text-center">
-                    <MDBBtn color="elegant" className="sandre-color w-100 ml-0">Upholstery</MDBBtn>
-                    </Col>
-                </Row>
-                </MDBCardBody>
-                </MDBCard>
-                </Col>
-                <Col lg={4}>
-                <MDBCard>
-                <MDBCardBody>
-                <Row>
-                    <Col>
-                    <img className="img-fluid" src={UpholsteryImage} alt="" />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col className="text-center">
-                    <MDBBtn color="elegant" className="sandre-color w-100 ml-0">Upholstery</MDBBtn>
-                    </Col>
-                </Row>
-                </MDBCardBody>
-                </MDBCard>
-                </Col>
-            </Row>
             <Row className="mt-5">
                 <Col>
                 <AboutPreview fluid className="pl-0 pr-0" />

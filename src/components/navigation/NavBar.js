@@ -48,9 +48,6 @@ class NavBar extends Component {
                             <MDBNavLink to='/instagram'>Instagram</MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
-                            <MDBNavLink to='/services'>Services</MDBNavLink>
-                        </MDBNavItem>
-                        <MDBNavItem>
                             <MDBNavLink to='/contact'>Contact</MDBNavLink>
                         </MDBNavItem>
                         </MDBNavbarNav>
