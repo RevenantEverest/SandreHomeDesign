@@ -14,8 +14,18 @@ code {
 
 p { margin-bottom: 5px; }
 
-.fixed-top { z-index: 900 !important; }
+.d-inline { display: inline; };
+.f-400 { font-weight: 400 !important; };
+.f-600 { font-weight: 600 !important; };
+.f-700 { font-weight: 700 !important; };
+.f-800 { font-weight: 800 !important; };
 .z-1 { z-index: 1; }
+
+.FontAwesomeIcon {
+  font-size: 1.25rem;
+}
+
+.fixed-top { z-index: 900 !important; }
 .sandre-text { color: rgb(238, 39, 102); }
 .sandre-color { background: rgb(238, 39, 102) !important; }
 .app-page { 
