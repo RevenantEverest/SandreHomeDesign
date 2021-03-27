@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
 import NavBar from './components/navigation/NavBar';
 import HomePage from './components/pages/HomePage';
 import About from './components/pages/About';
@@ -8,6 +11,8 @@ import Gallery from './components/pages/Gallery';
 import Contact from './components/pages/Contact';
 import Instagram from './components/pages/Instagram';
 import Footer from './components/navigation/Footer';
+
+library.add(fab);
 
 class App extends Component {
 
