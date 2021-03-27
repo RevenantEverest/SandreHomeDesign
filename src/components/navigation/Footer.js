@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import {
     MDBFooter
@@ -16,10 +17,12 @@ class Footer extends Component {
             <Container className="pt-5 mb-4 text-center text-md-left">
                 <Row className="mt-2 d-flex justify-content-center">
                 <Col md={3} lg={4} xl={3} className="mb-4">
-                    <h6 className="text-uppercase font-weight-bold">
-                    <strong>Sandre Home Design Inc.</strong>
-                    </h6>
-                    <hr className="pink darken-1 accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
+                    <Link to="/">
+                        <h6 className="text-uppercase font-weight-bold">
+                        <strong>Sandre Home Design Inc.</strong>
+                        </h6>
+                        <hr className="pink darken-1 accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
+                    </Link>
                     <p>
                     This is some sample flavor text that will be changed before production. It is meant
                     to display some text underneath the company name.
@@ -31,22 +34,22 @@ class Footer extends Component {
                     </h6>
                     <hr className="pink darken-1 accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
                     <p>
-                    <a href="#!">Cornices</a>
+                    <Link to="/gallery">Cornices</Link>
                     </p>
                     <p>
-                    <a href="#!">Drapery</a>
+                    <Link to="/gallery">Drapery</Link>
                     </p>
                     <p>
-                    <a href="#!">Pillows</a>
+                    <Link to="/">Pillows</Link>
                     </p>
                     <p>
-                    <a href="#!">Roman Shades</a>
+                    <Link to="/gallery">Roman Shades</Link>
                     </p>
                     <p>
-                    <a href="#!">Upholstery</a>
+                    <Link to="/gallery">Upholstery</Link>
                     </p>
                     <p>
-                    <a href="#!">Valences</a>
+                    <Link to="/gallery">Valences</Link>
                     </p>
                 </Col>
                 <Col md={3} lg={2} xl={2} className="mb-4">
