@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../css/HomePage.css';
 
+import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import {
     MDBNavbar,
@@ -10,7 +11,8 @@ import {
     MDBNavItem,
     MDBNavLink,
     MDBCollapse,
-    MDBBtn
+    MDBBtn,
+    MDBIcon
 } from 'mdbreact';
 
 import AboutPreview from '../sections/AboutPreview';
@@ -77,6 +79,20 @@ class HomePage extends Component {
                         <MDBNavLink to='/contact'>Contact</MDBNavLink>
                         </MDBNavItem>
                     </MDBNavbarNav>
+                    <MDBNavbarNav right>
+                        <MDBNavItem>
+                            <div className="nav-link cursor-pointer">
+                            <MDBIcon icon="envelope" />
+                            <p className="d-inline"> sophiaaksoy@gmail.com</p>
+                            </div>
+                        </MDBNavItem>
+                        <MDBNavItem>
+                            <div className="nav-link cursor-pointer">
+                            <MDBIcon icon="phone" />
+                            <p className="d-inline"> 516-768-6363</p>
+                            </div>
+                        </MDBNavItem>
+                    </MDBNavbarNav>
                     </MDBCollapse>
                 </Container>
                 </MDBNavbar>
@@ -93,9 +109,12 @@ class HomePage extends Component {
                     <Col lg={6} md={12}>
                         <img className="img-fluid Logo" src={Logo} alt="" />
                         <br />
-                        <MDBBtn className='sandre-color' size='md'>Portfolio</MDBBtn>
-                        <MDBBtn className='sandre-color' size='md'>Services</MDBBtn>
-                        <MDBBtn className='sandre-color' size='md'>About</MDBBtn>
+                        <Link to="/gallery">
+                            <MDBBtn className='sandre-color' size='md'>Portfolio</MDBBtn>
+                        </Link>
+                        <Link to="/">
+                            <MDBBtn className='sandre-color' size='md'>About</MDBBtn>
+                        </Link>
                     </Col>
                     </Row>
                 </Container>
