@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Container, Row, Col } from 'react-bootstrap';
 import {
     MDBCard,
@@ -9,6 +8,8 @@ import {
     MDBIcon,
     MDBBtn
 } from 'mdbreact';
+
+import SocialMedia from '../../res/SocialMedia';
 
 class Contact extends Component {
 
@@ -89,20 +90,20 @@ class Contact extends Component {
                 </MDBBtn>
                 <p className="d-inline" style={{ fontWeight: 600 }}>sophia@sandrehomedesign.com</p>
                 <hr className="mb-2 mt-2" />
-                <MDBBtn tag="a" target="_blank" rel="noopener noreferrer" href="https://facebook.com/sandredesigns" floating color="elegant" className="sandre-color accent-1">
+                <MDBBtn tag="a" target="_blank" rel="noopener noreferrer" href={SocialMedia.facebook.url} floating color="elegant" className="sandre-color accent-1">
                     <MDBIcon fab icon="facebook-f" />
                 </MDBBtn>
-                <p className="d-inline" style={{ fontWeight: 600 }}>Facebook.com/sandredesigns</p>
+                <p className="d-inline" style={{ fontWeight: 600 }}>Facebook.com/{SocialMedia.facebook.handle}</p>
                 <br />
-                <MDBBtn tag="a" target="_blank" rel="noopener noreferrer" href="https://instagram.com/sandrehomedesign" floating color="elegant" className="sandre-color accent-1">
+                <MDBBtn tag="a" target="_blank" rel="noopener noreferrer" href={SocialMedia.instagram.url} floating color="elegant" className="sandre-color accent-1">
                     <MDBIcon fab icon="instagram" />
                 </MDBBtn>
-                <p className="d-inline" style={{ fontWeight: 600 }}>@sandrehomedesign</p>
+                <p className="d-inline" style={{ fontWeight: 600 }}>@{SocialMedia.instagram.handle}</p>
                 <br />
-                <MDBBtn tag="a" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/sophiaaksoy" floating color="elegant" className="sandre-color accent-1">
+                <MDBBtn tag="a" target="_blank" rel="noopener noreferrer" href={SocialMedia.linkedin.url} floating color="elegant" className="sandre-color accent-1">
                     <MDBIcon fab icon="linkedin" />
                 </MDBBtn>
-                <p className="d-inline" style={{ fontWeight: 600 }}>Linkedin.com/in/sophiaaksoy</p>
+                <p className="d-inline" style={{ fontWeight: 600 }}>Linkedin.com/in/{SocialMedia.linkedin.handle}</p>
                 </Col>
             </Row>
             </Container>
