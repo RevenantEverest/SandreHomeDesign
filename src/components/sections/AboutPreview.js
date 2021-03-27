@@ -35,14 +35,14 @@ class AboutPreview extends Component {
                         <MDBCardText className="black-text">
                         <h3>Sophia Aksoy</h3>
                         <h6 className="grey-text">Founder</h6>
-                        <MDBBtn color="elegant" className="sandre-color ml-0" floating role="a" target="_blank" rel="noopener noreferrer" href={SocialMedia.facebook}>
+                        <MDBBtn color="elegant" className="sandre-color ml-0" floating role="a" target="_blank" rel="noopener noreferrer" href={SocialMedia.facebook.url}>
                             <MDBIcon fab icon="facebook-f" />
                         </MDBBtn>
-                        <MDBBtn color="elegant" className="sandre-color" floating role="a" target="_blank" rel="noopener noreferrer" href={SocialMedia.facebook}>
+                        <MDBBtn color="elegant" className="sandre-color" floating role="a" target="_blank" rel="noopener noreferrer" href={SocialMedia.instagram.url}>
                             <MDBIcon fab icon="instagram" />
                         </MDBBtn>
-                        <MDBBtn color="elegant" className="sandre-color" floating role="a" target="_blank" rel="noopener noreferrer" href={SocialMedia.facebook}>
-                            <MDBIcon fab icon="yelp" />
+                        <MDBBtn color="elegant" className="sandre-color" floating role="a" target="_blank" rel="noopener noreferrer" href={SocialMedia.linkedin.url}>
+                            <MDBIcon fab icon="linkedin" />
                         </MDBBtn>
                         <br />
                         <br />
