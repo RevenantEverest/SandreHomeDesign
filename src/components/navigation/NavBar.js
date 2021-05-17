@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../css/NavBar.css';
 import { withRouter } from 'react-router-dom';
 import {
     MDBNavbar,
@@ -8,7 +9,8 @@ import {
     MDBNavItem,
     MDBNavLink,
     MDBContainer,
-    MDBCollapse
+    MDBCollapse,
+    MDBIcon
 } from 'mdbreact';
 
 class NavBar extends Component {
@@ -19,10 +21,40 @@ class NavBar extends Component {
             collapse: false,
             isWideEnough: false,
         };
-        this.onClick = this.onClick.bind(this);
     }
 
+    componentDidMount() {
+        this._isMounted = true;
+        this.handleResize();
+        window.addEventListener("resize", this.handleResize);
+    }
+    
+    componentWillUnmount() {
+        this._isMounted = false;
+        window.removeEventListener("resize", this.handleResize);
+    }
+
+    handleResize = () => this.setState({ windowWidth: window.innerWidth });
     onClick =() => this.setState({ collapse: !this.state.collapse });
+
+    renderNavBarContactInfo() {
+        return(
+            <MDBNavbarNav right>
+                <MDBNavItem>
+                    <div className="nav-link cursor-pointer">
+                    <MDBIcon icon="envelope" />
+                    <p className="d-inline"> sophia@sandrehomedesign.com</p>
+                    </div>
+                </MDBNavItem>
+                <MDBNavItem>
+                    <div className="nav-link cursor-pointer">
+                    <MDBIcon icon="phone" />
+                    <p className="d-inline"> 516-768-6363</p>
+                    </div>
+                </MDBNavItem>
+            </MDBNavbarNav>
+        );
+    }
 
     render() {
         return(
@@ -44,13 +76,14 @@ class NavBar extends Component {
                         <MDBNavItem>
                             <MDBNavLink to='/gallery'>Gallery</MDBNavLink>
                         </MDBNavItem>
-                        <MDBNavItem>
+                        {/* <MDBNavItem>
                             <MDBNavLink to='/instagram'>Instagram</MDBNavLink>
-                        </MDBNavItem>
+                        </MDBNavItem> */}
                         <MDBNavItem>
                             <MDBNavLink to='/contact'>Contact</MDBNavLink>
                         </MDBNavItem>
-                        </MDBNavbarNav>
+                    </MDBNavbarNav>
+                    {this.state.windowWidth >= 1024 || this.state.windowWidth < 755 ? this.renderNavBarContactInfo() : ''}
                 </MDBCollapse>
                 </MDBContainer>
             </MDBNavbar>
