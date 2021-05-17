@@ -40,7 +40,7 @@ class Gallery extends Component {
     renderGallerySection() {
         const Section = GalleryImages.map((el, idx) => {
             let filter = this.state.filter;
-            if(!filter.includes(el.category.toLowerCase()) && filter.length > 0) return <div />;
+            if(!filter.includes(el.category.toLowerCase()) && filter.length > 0) return <div key={idx} />;
             return(
                 <Row key={idx}>
                     <Col>
@@ -79,6 +79,8 @@ class Gallery extends Component {
             <Row className="mb-5">
                 <Col className="text-center">
                 <h1 className="h1 font-weight-bold">GALLERY</h1>
+                <p className="mb-0">Click on the category buttons to filter between them. </p>
+                <p>Click activiated filters to turn them off.</p>
                 </Col>
             </Row>
             <Row className="mb-2">
