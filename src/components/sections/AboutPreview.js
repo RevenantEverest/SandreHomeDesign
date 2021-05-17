@@ -32,7 +32,7 @@ class AboutPreview extends Component {
                     <MDBCardBody>
                     <Row>
                         <Col lg={6} mg={6} sm={12} xs={12}>
-                        <MDBCardText className="black-text">
+                        <MDBCardText tag="div" className="black-text">
                         <h3>Sophia Aksoy</h3>
                         <h6 className="grey-text">Founder</h6>
                         <MDBBtn color="elegant" className="sandre-color ml-0" floating role="a" target="_blank" rel="noopener noreferrer" href={SocialMedia.facebook.url}>
@@ -57,7 +57,7 @@ class AboutPreview extends Component {
                         project. She will work with each client’s budget. Many other decorating services are available. They 
                         include paint selection, furniture and accessory shopping and in-home placement.
                         </p>
-                        <p>Please call for your complimentary “in – home “consultation today!</p>
+                        <p>Please call for your complimentary “in – home“ consultation today!</p>
                         <Link to="/about">
                         <MDBBtn color="elegant" className="sandre-color ml-0" size="md">Read More</MDBBtn>
                         </Link>
