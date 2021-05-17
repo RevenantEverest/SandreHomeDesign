@@ -9,7 +9,7 @@ import HomePage from './components/pages/HomePage';
 import About from './components/pages/About';
 import Gallery from './components/pages/Gallery';
 import Contact from './components/pages/Contact';
-import Instagram from './components/pages/Instagram';
+// import Instagram from './components/pages/Instagram';
 import Footer from './components/navigation/Footer';
 
 library.add(fab);
@@ -34,7 +34,7 @@ class App extends Component {
                     <Route exact path="/about" component={() => (<About className="app-page" />)} />
                     <Route exact path="/gallery" component={() => (<Gallery className="app-page" />)} />
                     <Route exact path="/contact" component={() => (<Contact className="app-page" />)} />
-                    <Route exact path="/instagram" component={() => (<Instagram className="app-page" />)} />
+                    {/* <Route exact path="/instagram" component={() => (<Instagram className="app-page" />)} /> */}
                     <Footer />
                 </div>
             </Router>
