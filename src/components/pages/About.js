@@ -32,7 +32,7 @@ class About extends Component {
                     <MDBCardBody>
                     <Row>
                         <Col lg={6} mg={6} sm={12} xs={12}>
-                        <MDBCardText className="black-text">
+                        <MDBCardText tag="div" className="black-text">
                         <h3>Sophia Aksoy</h3>
                         <h6 className="grey-text">Founder</h6>
                         <MDBBtn color="elegant" className="sandre-color ml-0" floating role="a" target="_blank" rel="noopener noreferrer" href={SocialMedia.facebook.url}>
