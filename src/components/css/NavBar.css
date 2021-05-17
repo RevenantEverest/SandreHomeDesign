@@ -1,0 +1,6 @@
+@media screen and (max-width: 360) {
+    #HomePage .navbar-brand {
+        font-size: 1rem !important;
+        color: red !important;
+    }
+}
