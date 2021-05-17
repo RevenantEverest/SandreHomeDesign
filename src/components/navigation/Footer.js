@@ -45,7 +45,7 @@ class Footer extends Component {
                     <Link to="/gallery">Upholstery</Link>
                     </p>
                     <p>
-                    <Link to="/gallery">Valences</Link>
+                    <Link to="/gallery">Valances</Link>
                     </p>
                 </Col>
                 <Col md={3} lg={2} xl={2} className="mb-4">
@@ -66,7 +66,7 @@ class Footer extends Component {
                     </h6>
                     <hr className="pink darken-1 accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }} />
                     <p>
-                    <i className="fa fa-envelope mr-3" /> sophiaaksoy@gmail.com
+                    <i className="fa fa-envelope mr-3" /> sophia@sandrehomedesign.com
                     </p>
                     <p>
                     <i className="fa fa-phone mr-3" /> 516-768-6363
